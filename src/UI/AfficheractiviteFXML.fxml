@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="442.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.AfficheractiviteFXMLController">
+   <children>
+      <TableView fx:id="tableannonce" layoutY="8.0" prefHeight="372.0" prefWidth="678.0">
+        <columns>
+          <TableColumn fx:id="col_nom" prefWidth="75.0" text="nom" />
+          <TableColumn fx:id="col_type" prefWidth="75.0" text="type" />
+            <TableColumn fx:id="col_adresse" prefWidth="75.0" text="adresse" />
+            <TableColumn fx:id="col_pays" prefWidth="75.0" text="pays" />
+            <TableColumn fx:id="col_region" prefWidth="75.0" text="region" />
+            <TableColumn fx:id="col_description" prefWidth="75.0" text="description" />
+            <TableColumn fx:id="col_prix" prefWidth="75.0" text="prix" />
+            <TableColumn fx:id="dispo" prefWidth="75.0" text="Places " />
+        </columns>
+      </TableView>
+      <Button id="dark-blue" fx:id="modifier" layoutX="481.0" layoutY="399.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="98.0" stylesheets="@Button.css" text="Modifier" />
+      <Button id="dark-blue" fx:id="supprimer" layoutX="105.0" layoutY="397.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="113.0" stylesheets="@Button.css" text="Supprimer" />
+   </children>
+</AnchorPane>
